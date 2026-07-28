@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus pedidos - Rocket Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html">Rocket Pizza</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="fale-conosco.html">Fale Conosco</a></li>
+            </ul>
+            <button id="abrirModal">Login</button>
+        </nav>
+    </header>
+
+    <main class="historico-page conta-page">
+        <h1 class="pedidos-titulo">Meus pedidos</h1>
+        <p class="pedidos-subtitulo">Consulte seus últimos pedidos e abra o comprovante novamente</p>
+
+        <section class="historico-lista" id="pedidosHistorico"></section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <p>Av. Principal, 123 - Centro</p>
+                <p>(11) 99999-9999</p>
+                <p>contato@rocketpizza.com</p>
+            </div>
+            <div class="footer-column">
+                <p>Atendimento todos os dias</p>
+                <p>Delivery rápido e artesanal</p>
+                <p>Sabor que te leva às galáxias</p>
+            </div>
+            <div class="footer-column">
+                <a href="https://www.instagram.com">📸 Instagram</a>
+                <a href="https://www.facebook.com">📘 Facebook</a>
+                <a href="https://web.whatsapp.com">💬 WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2026 Rocket Pizza - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="auth-modal">
+        <div class="auth-box">
+            <span class="auth-close">&times;</span>
+            <div id="loginBox">
+                <h2 class="auth-title">Login</h2>
+                <p class="auth-subtitle">Entre na sua conta</p>
+                <form class="auth-form" id="formLogin">
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="password" placeholder="Senha" required>
+                    <button type="submit" class="auth-btn">Entrar</button>
+                </form>
+                <div class="auth-switch">Não possui conta? <span id="irCadastro">Criar conta</span></div>
+            </div>
+            <div id="cadastroBox" style="display: none;">
+                <h2 class="auth-title">Cadastro</h2>
+                <p class="auth-subtitle">Crie sua conta</p>
+                <form class="auth-form" id="formCadastro">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="tel" placeholder="Telefone" required>
+                    <input type="password" id="senhaCadastro" placeholder="Senha" required>
+                    <input type="password" id="confirmarSenhaCadastro" placeholder="Confirmar senha" required>
+                    <button type="submit" class="auth-btn">Cadastrar</button>
+                </form>
+                <div class="auth-switch">Já possui conta? <span id="voltarLogin">Fazer login</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="mobile.navbar.js"></script>
+</body>
+
+</html>
+
+
+
+
+

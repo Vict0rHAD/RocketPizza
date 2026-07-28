@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos - Rocket Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html">Rocket Pizza</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a class="active-page" href="pedidos.html">Pedidos</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="fale-conosco.html">Fale Conosco</a></li>
+            </ul>
+            <button id="abrirModal">Login</button>
+        </nav>
+    </header>
+
+    <main class="pedidos-page">
+        <h1 class="pedidos-titulo">Fazer Pedido</h1>
+        <p class="pedidos-subtitulo">Monte sua pizza, escolha o pagamento e confirme sua entrega</p>
+
+        <div class="pedido-layout">
+            <section class="pedido-card">
+                <h2>Dados do pedido</h2>
+                <form id="pedidoForm">
+                    <div class="pedido-grid">
+                        <div class="pedido-grupo">
+                            <label for="nomeCliente">Nome</label>
+                            <input type="text" id="nomeCliente" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="pedido-grupo">
+                            <label for="telefoneCliente">Telefone</label>
+                            <input type="tel" id="telefoneCliente" placeholder="(11) 99999-9999" required>
+                        </div>
+
+                        <div class="pedido-grupo full">
+                            <label for="enderecoCliente">Endereço de entrega</label>
+                            <input type="text" id="enderecoCliente" placeholder="Rua, número, bairro e complemento"
+                                required>
+                        </div>
+
+                        <div class="pedido-grupo">
+                            <label for="tamanhoPizza">Tamanho</label>
+                            <select id="tamanhoPizza" required>
+                                <option value="media">Média</option>
+                                <option value="grande">Grande</option>
+                            </select>
+                        </div>
+
+                        <div class="pedido-grupo">
+                            <label for="tipoPizza">Quantidade de sabores</label>
+                            <select id="tipoPizza" required>
+                                <option value="1">1 sabor</option>
+                                <option value="2">2 sabores</option>
+                            </select>
+                        </div>
+
+                        <div class="pedido-grupo">
+                            <label for="saborUm">Primeiro sabor</label>
+                            <select id="saborUm" required></select>
+                        </div>
+
+                        <div class="pedido-grupo" id="saborDoisGrupo">
+                            <label for="saborDois" id="saborDoisLabel">Segundo sabor</label>
+                            <select id="saborDois"></select>
+                        </div>
+
+                        <div class="pedido-grupo full">
+                            <p class="sabores-info" id="saboresInfo">Para pizza de 2 sabores, o valor da pizza segue o
+                                sabor de maior preço.</p>
+                        </div>
+
+                        <div class="pedido-grupo">
+                            <label for="entradaPedido">Entrada</label>
+                            <select id="entradaPedido"></select>
+                        </div>
+
+                        <div class="pedido-grupo">
+                            <label for="quantidadeEntrada">Quantidade de entradas</label>
+                            <input type="number" id="quantidadeEntrada" min="0" max="10" value="0">
+                        </div>
+
+                        <div class="pedido-grupo">
+                            <label for="bebidaPedido" id="bebidaLabel">Bebida</label>
+                            <select id="bebidaPedido"></select>
+                            <p class="combo-bebida-aviso" id="comboBebidaAviso">O Combo Família já vem com refrigerante
+                                grande. Caso escolha uma bebida, ela será adicional.</p>
+                        </div>
+
+                        <div class="pedido-grupo">
+                            <label for="quantidadeBebida">Quantidade de bebidas</label>
+                            <input type="number" id="quantidadeBebida" min="0" max="10" value="0">
+                        </div>
+
+                        <div class="pedido-grupo full">
+                            <label for="observacoes">Observações</label>
+                            <textarea id="observacoes"
+                                placeholder="Ex.: sem cebola, borda bem assada, ponto de referência"></textarea>
+                        </div>
+
+                        <div class="pedido-grupo full">
+                            <span class="pagamento-titulo">Método de pagamento</span>
+                            <div class="pagamento-opcoes">
+                                <label class="pagamento-opcao">
+                                    <input type="radio" name="pagamento" value="pix" checked>
+                                    <span>Pix<br>5% de desconto</span>
+                                </label>
+                                <label class="pagamento-opcao">
+                                    <input type="radio" name="pagamento" value="cartao">
+                                    <span>Cartão de crédito</span>
+                                </label>
+                                <label class="pagamento-opcao">
+                                    <input type="radio" name="pagamento" value="dinheiro">
+                                    <span>Dinheiro na entrega</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <aside class="resumo-card">
+                <h2>Resumo</h2>
+                <div class="resumo-linha">
+                    <span>Pizza</span>
+                    <strong id="resumoSabores">Marguerita</strong>
+                </div>
+                <div class="resumo-linha">
+                    <span>Tamanho</span>
+                    <strong id="resumoTamanho">Média</strong>
+                </div>
+                <div class="resumo-linha">
+                    <span>Valor da pizza</span>
+                    <strong id="resumoPizza">R$ 64,90</strong>
+                </div>
+                <div class="resumo-linha">
+                    <span>Entrada</span>
+                    <strong id="resumoEntrada">Não incluir</strong>
+                </div>
+                <div class="resumo-linha">
+                    <span>Bebida</span>
+                    <strong id="resumoBebida">Não incluir</strong>
+                </div>
+                <div class="resumo-linha">
+                    <span>Taxa de entrega</span>
+                    <strong id="resumoEntrega">R$ 5,00</strong>
+                </div>
+                <div class="resumo-linha desconto">
+                    <span>Desconto Pix</span>
+                    <strong id="resumoDesconto">-R$ 3,25</strong>
+                </div>
+                <div class="resumo-linha">
+                    <span>Pagamento</span>
+                    <strong id="resumoPagamento">Pix</strong>
+                </div>
+                <div class="resumo-total">
+                    <span>Total</span>
+                    <strong id="resumoTotal">R$ 66,65</strong>
+                </div>
+                <button class="finalizar-btn" id="adicionarCarrinho" type="button">Adicionar ao carrinho</button>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <p>Av. Principal, 123 - Centro</p>
+                <p>(11) 99999-9999</p>
+                <p>contato@rocketpizza.com</p>
+            </div>
+            <div class="footer-column">
+                <p>Atendimento todos os dias</p>
+                <p>Delivery rápido e artesanal</p>
+                <p>Sabor que te leva às galáxias</p>
+            </div>
+            <div class="footer-column">
+                <a href="https://www.instagram.com">📸 Instagram</a>
+                <a href="https://www.facebook.com">📘 Facebook</a>
+                <a href="https://web.whatsapp.com">💬 WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2026 Rocket Pizza - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="pedido-modal" id="modalCartao">
+        <div class="pedido-modal-box">
+            <span class="pedido-modal-close" data-close="modalCartao">&times;</span>
+            <h2>Cartão de crédito</h2>
+            <p>Informe os dados para deixar o pagamento preparado no fechamento do pedido.</p>
+            <div class="pedido-grupo">
+                <label for="cartaoNome">Nome impresso no cartão</label>
+                <input type="text" id="cartaoNome" placeholder="Nome do titular">
+            </div>
+            <div class="pedido-grupo">
+                <label for="cartaoNumero">Número do cartão</label>
+                <input type="text" id="cartaoNumero" placeholder="0000 0000 0000 0000" maxlength="19">
+            </div>
+            <div class="pedido-grid">
+                <div class="pedido-grupo">
+                    <label for="cartaoValidade">Validade</label>
+                    <input type="text" id="cartaoValidade" placeholder="MM/AA" maxlength="5">
+                </div>
+                <div class="pedido-grupo">
+                    <label for="cartaoCvv">CVV</label>
+                    <input type="text" id="cartaoCvv" placeholder="000" maxlength="4">
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" type="button" data-close="modalCartao">Cancelar</button>
+                <button class="btn" type="button" id="salvarCartao">Salvar dados</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="pedido-modal" id="modalDinheiro">
+        <div class="pedido-modal-box">
+            <span class="pedido-modal-close" data-close="modalDinheiro">&times;</span>
+            <h2>Troco</h2>
+            <p>Informe se precisa de troco e o valor da nota que você tem em mãos.</p>
+            <div class="troco-opcoes">
+                <label>
+                    <input type="radio" name="precisaTroco" value="sim" checked>
+                    <span>Preciso de troco</span>
+                </label>
+                <label>
+                    <input type="radio" name="precisaTroco" value="nao">
+                    <span>Não preciso</span>
+                </label>
+            </div>
+            <div class="pedido-grupo" id="valorNotaGrupo">
+                <label for="valorNota">Valor da nota</label>
+                <input type="number" id="valorNota" min="0" step="0.01" placeholder="Ex.: 100,00">
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" type="button" data-close="modalDinheiro">Cancelar</button>
+                <button class="btn" type="button" id="salvarDinheiro">Salvar troco</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="auth-modal">
+        <div class="auth-box">
+            <span class="auth-close">&times;</span>
+            <div id="loginBox">
+                <h2 class="auth-title">Login</h2>
+                <p class="auth-subtitle">Entre na sua conta</p>
+                <form class="auth-form" id="formLogin">
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="password" placeholder="Senha" required>
+                    <button type="submit" class="auth-btn">Entrar</button>
+                </form>
+                <div class="auth-switch">Não possui conta? <span id="irCadastro">Criar conta</span></div>
+            </div>
+
+            <div id="cadastroBox" style="display: none;">
+                <h2 class="auth-title">Cadastro</h2>
+                <p class="auth-subtitle">Crie sua conta</p>
+                <form class="auth-form" id="formCadastro">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="tel" placeholder="Telefone" required>
+                    <input type="password" id="senhaCadastro" placeholder="Senha" required>
+                    <input type="password" id="confirmarSenhaCadastro" placeholder="Confirmar senha" required>
+                    <button type="submit" class="auth-btn">Cadastrar</button>
+                </form>
+                <div class="auth-switch">Já possui conta? <span id="voltarLogin">Fazer login</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="mobile.navbar.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
