@@ -1,0 +1,3 @@
+@model LoginViewModel
+@{ViewData["Title"]="Login";}<div class="form-panel"><h1>Entrar</h1><form method="post"><input asp-for="Retorno" type="hidden"/><div asp-validation-summary="ModelOnly"></div><label asp-for="Login"></label><input asp-for="Login" class="form-control mb-3"/><label asp-for="Senha"></label><input asp-for="Senha" class="form-control mb-3"/><button class="btn btn-danger">Entrar</button></form></div>
+@section Scripts{<partial name="_ValidationScriptsPartial"/>}

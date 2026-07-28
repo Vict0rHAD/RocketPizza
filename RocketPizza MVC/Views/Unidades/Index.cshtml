@@ -1,0 +1,2 @@
+@model IReadOnlyList<Unidade>
+@{ViewData["Title"]="Unidades";}<section class="section"><div class="container"><h1>Nossas unidades</h1><div class="row g-4">@foreach(var u in Model){<div class="col-md-6"><div class="card p-4"><h2>@u.Nome</h2><p>@u.Endereco<br/>@u.Horario<br/>@u.Telefone</p></div></div>}</div></div></section>

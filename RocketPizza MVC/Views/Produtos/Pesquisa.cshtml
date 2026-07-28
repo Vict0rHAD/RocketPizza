@@ -1,0 +1,3 @@
+@model IReadOnlyList<Produto>
+@{ViewData["Title"]="Pesquisa";}
+<section class="section"><div class="container"><h1>Resultados para “@ViewBag.Termo”</h1><partial name="~/Views/Produtos/_Lista.cshtml" model="Model"/></div></section>

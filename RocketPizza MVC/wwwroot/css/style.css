@@ -1,0 +1,7 @@
+:root{--rocket:#b71925;--dark:#171717;--cream:#fff8ed}
+body{background:var(--cream);color:#292929;min-height:100vh;display:flex;flex-direction:column}
+main{flex:1}.navbar{background:var(--rocket)!important}.logo{font-size:1.45rem;font-weight:800}
+footer{background:var(--dark);color:#fff;margin-top:3rem}.hero-mvc{min-height:520px;background:linear-gradient(90deg,rgba(0,0,0,.75),rgba(0,0,0,.15)),url('/img/banner/banner.png') center/cover;display:flex;align-items:center;color:#fff}
+.hero-mvc h1{font-size:clamp(2.5rem,7vw,5rem);font-weight:900}.section{padding:4rem 0}.card-pizza{height:100%;border:0;box-shadow:0 8px 24px #0002;overflow:hidden}
+.card-pizza img{height:210px;object-fit:cover}.price{font-size:1.35rem;color:var(--rocket);font-weight:800}.form-panel{max-width:720px;margin:3rem auto;background:#fff;padding:2rem;border-radius:18px;box-shadow:0 8px 30px #0002}
+.table-wrap{overflow:auto;background:#fff;border-radius:14px;padding:1rem}.admin-section{margin:2.5rem 0}.validation-summary-errors{color:#a00}.field-validation-error{color:#a00;font-size:.9rem}

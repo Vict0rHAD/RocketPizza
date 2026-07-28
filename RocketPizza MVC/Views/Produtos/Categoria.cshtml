@@ -1,0 +1,3 @@
+@model IReadOnlyList<Produto>
+@{ViewData["Title"]="Categoria";}
+<section class="section"><div class="container"><h1>@ViewBag.Categoria</h1><partial name="~/Views/Produtos/_Lista.cshtml" model="Model"/></div></section>

@@ -1,0 +1,2 @@
+@model IReadOnlyList<Pedido>
+@{ViewData["Title"]="Meus pedidos";}<section class="section"><div class="container"><h1>Meus pedidos</h1><div class="table-wrap"><table class="table"><thead><tr><th>Nº</th><th>Data</th><th>Status</th><th>Total</th></tr></thead><tbody>@foreach(var p in Model){<tr><td>#@p.PedidoId</td><td>@p.CriadoEm.ToString("dd/MM/yyyy HH:mm")</td><td>@p.Status</td><td>@p.Total.ToString("C")</td></tr>}</tbody></table></div></div></section>

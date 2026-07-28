@@ -1,0 +1,3 @@
+@model IReadOnlyList<Produto>
+@{ViewData["Title"]="Cardápio";}
+<section class="section"><div class="container"><h1>Cardápio</h1><form asp-action="Pesquisa" method="get" class="d-flex mb-4"><input name="termo" class="form-control" placeholder="Pesquisar produto"/><button class="btn btn-danger">Pesquisar</button></form>@foreach(var g in Model.GroupBy(x=>x.Categoria)){<h2>@g.Key</h2><div class="row g-4 mb-5">@foreach(var p in g){<div class="col-md-4"><div class="card card-pizza">@if(p.Imagem is not null){<img src="/@p.Imagem" alt="@p.Nome"/>}<div class="card-body"><h3>@p.Nome</h3><p>@p.Descricao</p><strong class="price">@p.Preco.ToString("C")</strong><br/><a asp-action="Detalhes" asp-route-id="@p.ProdutoId">Detalhes</a></div></div></div>}</div>}</div></section>
