@@ -1,0 +1,694 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Rocket Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="top" class="logo" href="index.html">Rocket Pizza</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="fale-conosco.html">Fale Conosco</a></li>
+            </ul>
+
+            <button id="abrirModal">Login</button>
+
+        </nav>
+    </header>
+
+    <!-- SUB-NAVEGAÇÃO DE CATEGORIAS -->
+    <nav class="cardapio-nav">
+        <ul>
+            <li><a href="#pizzas-tradicionais" class="cardapio-link active">Pizzas Tradicionais</a></li>
+            <li><a href="#pizzas-especiais" class="cardapio-link">Pizzas Especiais</a></li>
+            <li><a href="#pizzas-doces" class="cardapio-link">Pizzas Doces</a></li>
+            <li><a href="#entradas" class="cardapio-link">Entradas</a></li>
+            <li><a href="#bebidas" class="cardapio-link">Bebidas</a></li>
+        </ul>
+    </nav>
+
+    <main class="cardapio-page">
+
+        <h1 class="cardapio-titulo">Nosso Cardápio</h1>
+        <p class="cardapio-subtitulo">Sabores artesanais que te levam às galáxias</p>
+
+        <!-- ============================================
+             PIZZAS TRADICIONAIS
+        ============================================ -->
+        <section id="pizzas-tradicionais" class="cardapio-section">
+            <h2>Pizzas Tradicionais</h2>
+            <p class="cardapio-descricao">Nossas pizzas clássicas, preparadas com massa artesanal e ingredientes
+                selecionados. Disponíveis nos tamanhos Média e Grande.</p>
+
+            <div class="menu-grid">
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Marguerita" data-img="img/marguerita2.png"
+                    data-desc="Mozzarella, rodela de tomate e manjericão fresco.">
+                    <div class="menu-item-img">
+                        <img src="img/marguerita2.png" alt="Pizza Marguerita">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Marguerita</h3>
+                        <p>Mozzarella, rodela de tomate e manjericão fresco.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 64,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 79,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Calabresa" data-img="img/calabresa1.png"
+                    data-desc="Calabresa fatiada, cebola e azeitonas pretas.">
+                    <div class="menu-item-img">
+                        <img src="img/calabresa1.png" alt="Pizza Calabresa">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Calabresa</h3>
+                        <p>Calabresa fatiada, cebola e azeitonas pretas.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 64,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 79,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Frango com Catupiry®" data-img="img/frango2.png"
+                    data-desc="Peito de frango desfiado, Catupiry® e milho.">
+                    <div class="menu-item-img">
+                        <img src="img/frango2.png" alt="Pizza Frango com Catupiry">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Frango com Catupiry</h3>
+                        <p>Peito de frango desfiado, Catupiry® e milho.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 64,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 79,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Portuguesa" data-img="img/portuguesa.png"
+                    data-desc="Presunto, palmito, ovos, cebola, mozzarella e azeitonas pretas.">
+                    <div class="menu-item-img">
+                        <img src="img/portuguesa.png" alt="Pizza Portuguesa"><br>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Portuguesa</h3>
+                        <p>Presunto, palmito, ovos, cebola, mozzarella e azeitonas pretas.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 69,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 84,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Pepperoni" data-img="img/pepperoni.png"
+                    data-desc="Mozzarella, pepperoni fatiado e pimentão verde.">
+                    <div class="menu-item-img">
+                        <img src="img/pepperoni.png" alt="Pizza Pepperoni">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Pepperoni</h3>
+                        <p>Mozzarella, pepperoni fatiado e pimentão verde.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 72,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 89,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Quatro Queijos" data-img="img/quatro-queijos.png"
+                    data-desc="Mozzarella, catupiry, gorgonzola e provolone.">
+                    <div class="menu-item-img">
+                        <img src="img/quatro-queijos.png" alt="Pizza Quatro Queijos"><br>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Quatro Queijos</h3>
+                        <p>Mozzarella, catupiry, gorgonzola e provolone.</p>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 72,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 89,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Mozzarella" data-img="img/mussarela.png"
+                    data-desc="Molho de tomate e mozzarella de qualidade premium.">
+                    <div class="menu-item-img">
+                        <img src="img/mussarela.png" alt="Pizza Mozzarella"><br>
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Mozzarella</h3>
+                        <p>Molho de tomate e mozzarella de qualidade premium.</p>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 56,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 69,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Napolitana" data-img="img/napolitana.png"
+                    data-desc="Mozzarella, tomate fatiado, alho frito, orégano e parmesão.">
+                    <div class="menu-item-img">
+                        <img src="img/napolitana.png" alt="Pizza Napolitana">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Napolitana</h3>
+                        <p>Mozzarella, tomate fatiado, alho frito, orégano e parmesão.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 64,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 79,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Atum" data-img="img/atum.png"
+                    data-desc="Atum, cebola, tomate fatiado e azeitonas pretas.">
+                    <div class="menu-item-img">
+                        <img src="img/Atum.png" alt="Pizza Atum">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Atum</h3>
+                        <p>Atum, cebola, tomate fatiado e azeitonas pretas.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 72,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 89,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================
+             PIZZAS ESPECIAIS
+        ============================================ -->
+        <section id="pizzas-especiais" class="cardapio-section">
+            <h2>Pizzas Especiais</h2>
+            <p class="cardapio-descricao">Criações exclusivas da Rocket Pizza com ingredientes premium. Sabores que são
+                verdadeiras viagens intergalácticas.</p>
+
+            <div class="menu-grid">
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Pizza Rocket Supreme" data-img="img/camarao.jpg"
+                    data-desc="Camarão, cream cheese, alho poró e finalizada com molho de trufa.">
+                    <div class="menu-item-img">
+                        <img src="img/camarao.jpg" alt="Pizza Rocket Supreme">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Rocket Supreme</h3>
+                        <p>Camarão, cream cheese, alho poró e finalizada com molho de trufa.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 84,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 99,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Pizza Galáxia" data-img="img/carne-seca.jpg"
+                    data-desc="Carne seca desfiada, catupiry, cebola caramelizada e rúcula fresca.">
+                    <div class="menu-item-img">
+                        <img src="img/carne-seca.jpg" alt="Pizza Galáxia">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Galáxia</h3>
+                        <p>Carne seca desfiada, catupiry, cebola caramelizada e rúcula fresca.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 79,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 94,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Pizza Meteoro" data-img="img/pepperoni2.png"
+                    data-desc="Pepperoni, jalapeño, pimentão e molho picante especial da casa.">
+                    <div class="menu-item-img">
+                        <img src="img/pepperoni2.png" alt="Pizza Meteoro">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Meteoro</h3>
+                        <p>Pepperoni, jalapeño, pimentão e molho picante especial da casa.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 74,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 89,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Pizza Nebulosa" data-img="img/salmao.jpg"
+                    data-desc="Salmão defumado, cream cheese, alcaparras e endro (dill).">
+                    <div class="menu-item-img">
+                        <img src="img/salmao.jpg" alt="Pizza Nebulosa">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Nebulosa</h3>
+                        <p>Salmão defumado, cream cheese, alcaparras e endro (dill).</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 84,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 99,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Pizza Constelação" data-img="img/shimeji.jpg"
+                    data-desc="Shimeji e shiitake refogados, aspargos, parmesão e lascas de presunto Parma.">
+                    <div class="menu-item-img">
+                        <img src="img/shimeji.jpg" alt="Pizza Constelação">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Constelação</h3>
+                        <p>Shimeji e shiitake refogados, aspargos, parmesão e lascas de presunto Parma.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 79,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 94,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Pizza Órbita" data-img="img/peito-peru.jpg"
+                    data-desc="Peito de peru, cream cheese, cebola caramelizada e ciboulette">
+                    <div class="menu-item-img">
+                        <img src="img/peito-peru.jpg" alt="Pizza Órbita">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Órbita</h3>
+                        <p>Peito de peru, cream cheese, cebola caramelizada e ciboulette.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 74,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 89,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================
+             PIZZAS DOCES
+        ============================================ -->
+        <section id="pizzas-doces" class="cardapio-section">
+            <h2>Pizzas Doces</h2>
+            <p class="cardapio-descricao">O grand finale perfeito para sua refeição. Nossas pizzas doces são
+                irresistíveis!</p>
+
+            <div class="menu-grid">
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Chocolate" data-img="img/chocolate.jpg"
+                    data-desc="Chocolate ao leite e chocolate branco. Opcional com morango ou banana.">
+                    <div class="menu-item-img">
+                        <img src="img/chocolate.jpg" alt="Pizza de Chocolate">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Chocolate</h3>
+                        <p>Chocolate ao leite e chocolate branco. Opcional com morango ou banana.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 59,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 72,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Banana com Canela" data-img="img/banana.png" data-desc="Banana com açúcar e canela. Opcional com chocolate ao leite, chocolate branco ou doce de
+                            leite.">
+                    <div class="menu-item-img">
+                        <img src="img/banana.png" alt="Pizza de Banana com Canela">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Banana com Canela</h3>
+                        <p>Banana com açúcar e canela. Opcional com chocolate ao leite, chocolate branco ou doce de
+                            leite.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 56,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 69,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Nutella" data-img="img/nutella.jpg"
+                    data-desc="Massa artesanal Rocket e Nutella®. Opcional com morango ou banana.">
+                    <div class="menu-item-img">
+                        <img src="img/nutella.jpg" alt="Pizza de Nutella">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Nutella</h3>
+                        <p>Massa artesanal Rocket e Nutella®. Opcional com morango ou banana.</p><br>
+                        <div class="menu-precos">
+                            <span class="menu-tamanho">MED: <strong>R$ 64,90</strong></span>
+                            <span class="menu-tamanho">GRD: <strong>R$ 79,90</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================
+             ENTRADAS
+        ============================================ -->
+        <section id="entradas" class="cardapio-section">
+            <h2>Entradas</h2>
+            <p class="cardapio-descricao">Para começar sua experiência com o pé direito. Porções ideais para
+                compartilhar.</p>
+
+            <div class="menu-grid">
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Bruschetta" data-img="img/bruschetta.png"
+                    data-desc="Pão italiano tostado, tomate picado, manjericão fresco e azeite extra virgem.">
+                    <div class="menu-item-img">
+                        <img src="img/bruschetta.png" alt="Bruschetta">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Bruschetta Clássica</h3>
+                        <p>Pão italiano tostado, tomate picado, manjericão fresco e azeite extra virgem.</p>
+                        <div class="menu-precos">
+                            <span class="menu-preco-unico">R$ 29,90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Bolinhas de Queijo" data-img="img/bolinhas-queijo.png"
+                    data-desc="12 unidades de queijo mozzarella empanado com ervas finas.">
+                    <div class="menu-item-img">
+                        <img src="img/bolinhas-queijo.png" alt="Bolinha de Queijo">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Bolinha de Queijo</h3>
+                        <p>12 unidades de queijo mozzarella empanado com ervas finas.</p>
+                        <div class="menu-precos">
+                            <span class="menu-preco-unico">R$ 34,90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Focaccia" data-img="img/focaccia.png"
+                    data-desc="Pão focaccia artesanal com azeite, alecrim, sal grosso e tomate seco.">
+                    <div class="menu-item-img">
+                        <img src="img/focaccia.png" alt="Focaccia">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Focaccia Rocket</h3>
+                        <p>Pão focaccia artesanal com azeite, alecrim, sal grosso e tomate seco.</p>
+                        <div class="menu-precos">
+                            <span class="menu-preco-unico">R$ 24,90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Palitos de Mozzarella" data-img="img/palitos.png"
+                    data-desc="8 palitos de mozzarella empanados, acompanhados de molho marinara.">
+                    <div class="menu-item-img">
+                        <img src="img/palitos.png" alt="Palitos de Mozzarella">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Palitos de Mozzarella</h3>
+                        <p>8 palitos de mozzarella empanados, acompanhados de molho marinara.</p>
+                        <div class="menu-precos">
+                            <span class="menu-preco-unico">R$ 32,90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Anéis de Cebola" data-img="img/aneis-cebola.png"
+                    data-desc="Anéis de cebola empanados com tempero especial e molho barbecue.">
+                    <div class="menu-item-img">
+                        <img src="img/aneis-cebola.png" alt="Anéis de Cebola">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Anéis de Cebola</h3>
+                        <p>Anéis de cebola empanados com tempero especial e molho barbecue.</p>
+                        <div class="menu-precos">
+                            <span class="menu-preco-unico">R$ 27,90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item" data-nome="Salada Ceasar" data-img="img/salada.png"
+                    data-desc="Alface americana, croutons, parmesão e molho caesar caseiro.">
+                    <div class="menu-item-img">
+                        <img src="img/salada.png" alt="Salada Caesar">
+                    </div>
+                    <div class="menu-item-info">
+                        <h3>Salada Caesar</h3>
+                        <p>Alface americana, croutons, parmesão e molho caesar caseiro.</p>
+                        <div class="menu-precos">
+                            <span class="menu-preco-unico">R$ 26,90</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================
+             BEBIDAS
+        ============================================ -->
+        <section id="bebidas" class="cardapio-section">
+            <h2>Bebidas</h2>
+            <p class="cardapio-descricao">Acompanhamentos perfeitos para sua pizza favorita.</p>
+
+            <div class="menu-grid">
+
+                <!-- ITEM -->
+                <div class="menu-item2 menu-item-bebida">
+                    <div class="menu-item-info">
+                        <h3>Refrigerante Lata</h3>
+                        <p>Coca-Cola, Guaraná, Sprite ou Fanta - 350ml.</p>
+                        <div class="menu-precos">
+                            <span class="menu-preco-unico">R$ 8,90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item2 menu-item-bebida">
+                    <div class="menu-item-info">
+                        <h3>Refrigerante 2L</h3>
+                        <p>Coca-Cola, Guaraná, Sprite ou Fanta - 2 litros.</p>
+                        <div class="menu-precos">
+                            <span class="menu-preco-unico">R$ 16,90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item2 menu-item-bebida">
+                    <div class="menu-item-info">
+                        <h3>Suco Natural</h3>
+                        <p>Laranja, limão, maracujá ou abacaxi - 500ml.</p>
+                        <div class="menu-precos">
+                            <span class="menu-preco-unico">R$ 14,90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item2 menu-item-bebida">
+                    <div class="menu-item-info">
+                        <h3>Água Mineral</h3>
+                        <p>Com ou sem gás - 500ml.</p>
+                        <div class="menu-precos">
+                            <span class="menu-preco-unico">R$ 6,90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item2 menu-item-bebida">
+                    <div class="menu-item-info">
+                        <h3>Cerveja Artesanal</h3>
+                        <p>IPA, Pilsen ou Weiss - 600ml.</p>
+                        <div class="menu-precos">
+                            <span class="menu-preco-unico">R$ 19,90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM -->
+                <div class="menu-item2 menu-item-bebida">
+                    <div class="menu-item-info">
+                        <h3>Chopp</h3>
+                        <p>Chopp artesanal Pilsen ou Escuro - 300ml.</p>
+                        <div class="menu-precos">
+                            <span class="menu-preco-unico">R$ 14,90</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <a href="#top" class="btn">Voltar ao Topo</a>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <p>Av. Principal, 123 - Centro</p>
+                <p>(11) 99999-9999</p>
+                <p>contato@rocketpizza.com</p>
+            </div>
+            <div class="footer-column">
+                <p>Atendimento todos os dias</p>
+                <p>Delivery rápido e artesanal</p>
+                <p>Sabor que te leva às galáxias</p>
+            </div>
+            <div class="footer-column">
+                <a href="https://www.instagram.com">📸 Instagram</a>
+                <a href="https://www.facebook.com">📘 Facebook</a>
+                <a href="https://web.whatsapp.com">💬 WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Rocket Pizza - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <div class="modal" id="modalPizza">
+
+        <div class="modal-content">
+
+            <span class="fechar">&times;</span>
+
+            <img id="modalImg" src="" alt="">
+
+            <h2 id="modalTitulo" class="modal-titulo"></h2>
+
+            <p id="modalDesc"></p>
+            <button><a href="pedidos.html">Fazer Pedido</a></button>
+
+
+
+        </div>
+
+    </div>
+    <div class="auth-modal">
+
+        <div class="auth-box">
+
+            <span class="auth-close">&times;</span>
+
+            <!-- LOGIN -->
+            <div id="loginBox">
+
+                <h2 class="auth-title">Login</h2>
+
+                <p class="auth-subtitle">
+                    Entre na sua conta
+                </p>
+
+                <form class="auth-form" id="formLogin">
+
+                    <input type="email" placeholder="E-mail" required>
+
+                    <input type="password" placeholder="Senha" required>
+
+                    <button type="submit" class="auth-btn">
+                        Entrar
+                    </button>
+
+                </form>
+
+                <div class="auth-switch">
+
+                    Não possui conta?
+
+                    <span id="irCadastro">
+                        Criar conta
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CADASTRO -->
+            <div id="cadastroBox" style="display: none;">
+
+                <h2 class="auth-title">Cadastro</h2>
+
+                <p class="auth-subtitle">
+                    Crie sua conta
+                </p>
+
+                <form class="auth-form" id="formCadastro">
+
+                    <input type="text" placeholder="Nome" required>
+
+                    <input type="email" placeholder="E-mail" required>
+
+                    <input type="tel" placeholder="Telefone" required>
+
+                    <input type="password" id="senhaCadastro" placeholder="Senha" required>
+
+                    <input type="password" id="confirmarSenhaCadastro" placeholder="Confirmar senha" required>
+
+                    <button type="submit" class="auth-btn">
+                        Cadastrar
+                    </button>
+
+                </form>
+
+                <div class="auth-switch">
+
+                    Já possui conta?
+
+                    <span id="voltarLogin">
+                        Fazer login
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="mobile.navbar.js"></script>
+
+
+</body>
+
+</html>
+
+
+
+

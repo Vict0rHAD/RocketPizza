@@ -1,0 +1,8 @@
+﻿travar combo familia
+aparecer pagina pedido quando está logado
+buscar por todo o site erros de acentuação
+colocar uma imagem ao lado do nome do perfil
+
+
+
+
