@@ -1,0 +1,6 @@
+IF DB_ID(N'RocketPizzaDB') IS NULL
+BEGIN
+    CREATE DATABASE RocketPizzaDB;
+END
+GO
+

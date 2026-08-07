@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="RocketPizza.Mvc/RocketPizza.Mvc.csproj" />
+  <Project Path="RocketPizza.Forms/RocketPizza.Forms.csproj" />
+  <Project Path="RocketPizza.Dados/RocketPizza.Dados.csproj" />
+</Solution>

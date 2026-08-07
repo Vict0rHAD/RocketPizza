@@ -1,0 +1,24 @@
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\RocketPizzaSistema\RocketPizza.Dados\bin\Debug\net10.0\RocketPizza.Dados.deps.json
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\RocketPizzaSistema\RocketPizza.Dados\bin\Debug\net10.0\RocketPizza.Dados.dll
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\RocketPizzaSistema\RocketPizza.Dados\bin\Debug\net10.0\RocketPizza.Dados.pdb
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\RocketPizzaSistema\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.csproj.AssemblyReference.cache
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\RocketPizzaSistema\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\RocketPizzaSistema\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.AssemblyInfoInputs.cache
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\RocketPizzaSistema\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.AssemblyInfo.cs
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\RocketPizzaSistema\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\RocketPizzaSistema\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.dll
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\RocketPizzaSistema\RocketPizza.Dados\obj\Debug\net10.0\refint\RocketPizza.Dados.dll
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\RocketPizzaSistema\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.pdb
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\RocketPizzaSistema\RocketPizza.Dados\obj\Debug\net10.0\ref\RocketPizza.Dados.dll
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\Aula de teste - Copia\RocketPizza.Dados\bin\Debug\net10.0\RocketPizza.Dados.deps.json
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\Aula de teste - Copia\RocketPizza.Dados\bin\Debug\net10.0\RocketPizza.Dados.dll
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\Aula de teste - Copia\RocketPizza.Dados\bin\Debug\net10.0\RocketPizza.Dados.pdb
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\Aula de teste - Copia\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.csproj.AssemblyReference.cache
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\Aula de teste - Copia\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\Aula de teste - Copia\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.AssemblyInfoInputs.cache
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\Aula de teste - Copia\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.AssemblyInfo.cs
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\Aula de teste - Copia\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\Aula de teste - Copia\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.dll
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\Aula de teste - Copia\RocketPizza.Dados\obj\Debug\net10.0\refint\RocketPizza.Dados.dll
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\Aula de teste - Copia\RocketPizza.Dados\obj\Debug\net10.0\RocketPizza.Dados.pdb
+C:\Users\Eduardo\Documents\Codex\2026-08-04\e\outputs\Aula de teste - Copia\RocketPizza.Dados\obj\Debug\net10.0\ref\RocketPizza.Dados.dll
